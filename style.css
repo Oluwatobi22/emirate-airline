@@ -1,0 +1,237 @@
+body{
+    font-family: HelveticaNeue-Light,Helvetica,Arial,sans-serif;
+}
+.move {
+    margin-left: 13px;
+}
+.nav-link {
+    color: black !important;
+    font-weight: 700;
+}
+.navbar-brand {
+    margin-left: 84px;
+}
+.sky {
+    margin-left: -88px;
+}
+.sky a {
+    font-size: 23px;
+}
+.loy {
+    font-family: HelveticaNeue,Helvetica Neue,Helvetica,Arial,Lucida;
+}
+.sflight {
+    background: white;
+}
+.widget li {
+    display: inline-block;
+}
+.sky li {
+    display: inline-block;
+}
+.footer h3 {
+    color: white;
+    font-weight: 700;
+    font-family: 'Times New Roman', Times, serif;
+
+}
+
+.footer a {
+    color:#a9a9a9;
+    font-family:  'Lucida Grande', 'Times New Roman', Times, serif, 'Lucida Sans Unicode',Verdana, sans-serif;
+    text-align: justify !important;
+    
+}
+.footer a:hover {
+    color:#a9a9a9;
+    font-family:  'Lucida Grande', 'Times New Roman', Times, serif, 'Lucida Sans Unicode',Verdana, sans-serif;
+    text-align: justify !important;
+    
+}
+.footer22 h3 {
+    color: white;
+    font-weight: 700;
+    font-family: 'Times New Roman', Times, serif;
+
+}
+.footer22 a {
+    color:#a9a9a9;
+    font-family:  'Lucida Grande', 'Times New Roman', Times, serif, 'Lucida Sans Unicode',Verdana, sans-serif;
+    text-align: justify !important;
+    
+}
+.footer22 a:hover {
+    color:#a9a9a9;
+    font-family:  'Lucida Grande', 'Times New Roman', Times, serif, 'Lucida Sans Unicode',Verdana, sans-serif;
+    text-align: justify !important;
+    
+}
+.loyal {
+    font-family: Emirates-Bold,Helvetica,Lucida Grande,;
+    font-size: 45px;
+}
+.mmma a {
+    color: white;
+    font-size: 34px;
+    font-family: Helvetica,Arial,Lucida Grande,sans-serif;
+}
+.sky{
+    color: white;
+    padding: 0px 11px;
+    margin-left: 9px;
+   
+}
+.sky li {
+    padding: 0px 12px;
+}
+.tobi{
+    color: #fff;
+    background: #d71921;
+    padding: 12px 23px;
+}
+.mod li {
+display: inline-block;
+padding: 0px 7px;
+
+}
+
+a:not([href]):not([tabindex]) {
+    color: #a9a9a9 !important;
+    text-decoration: none;
+    font-size: 11px;
+}
+/* .mod a:hover {
+    color: #a9a9a9;
+    text-decoration: none;
+    background-color: transparent;
+} */
+.emi{
+    display: inline-block;
+}
+.eee li{
+    display: inline-block;
+    padding: 0px 12px;
+    font-size: 19px;
+   
+}
+.access a:hover {
+    color: #a9a9a9;
+    text-decoration: none;
+    background-color: transparent;
+}
+.access li {
+    display: inline-block;
+    padding: 0px 7px;
+}
+.access a{
+    color: #a9a9a9;
+    text-decoration: none;
+    background-color: transparent;
+    font-size: 11px;
+
+}
+text-white {
+    color:  #a9a9a9 !important;
+}
+ .top {
+    color: white !important;
+}
+.eee {
+    margin-left: 250px;
+}
+.btn-danger {
+    background-color: #d71921 !important;
+}
+.open{
+    font-size: 20px;
+}
+.form-control2 {
+    display: block;
+     margin:12pxpx 9px
+}
+.abt a {
+    color: #a9a9a9;
+    font-size: 19px;
+}
+.underline {
+    border-bottom: 2px solid #FFCF03;
+    width: 200px;
+    text-align: center;
+    display: inline-block;
+}
+.form-control {
+    display: block;
+    width: 100%;
+    padding: 1.02rem 1.45rem !important;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    margin: 12px 0px;
+}
+.detail {
+    color: #a9a9a9;
+    font-size: 14px;  
+}
+.detail a{
+    color: #a9a9a9;
+    font-size: 14px;
+    
+}
+.detail a:hover {
+    color: #a9a9a9;
+    font-size: 14px;
+    
+}
+.detail:hover {
+    color: #495057;
+    text-decoration: none;
+}
+select.form-control:not([size]):not([multiple]) {
+    height: calc(4.25rem + 2px) !important;
+}
+.sub h3 {
+    font-size: 21px;
+    font-family: Emirates-Bold;
+    color: #fff;
+    font-weight: 500;
+
+}
+.app h3 {
+color:gainsboro;
+font-size: 17px;
+
+}
+.btn-outline-light {
+    padding: 6px 19px !important;
+}
+.app p {
+    color:#a9a9a9;
+    font-size: 13px;
+}
+.sub p {
+    font-size: 13px;
+    color:#a9a9a9;
+}
+.exp h3 {
+    color: white;
+    font-size: 17px;
+    font-weight: 700;
+}
+.exp p {
+    color: #a9a9a9;
+  font-size: 13px;
+
+}
+.social-media .fa-brands  {
+    display: inline-block;
+    font-size: 30px;
+    color: white;
+    background-color: black;
+    padding: 5px 9px;
+    border-radius: 8px;
+}

@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EMIRATE WEBSITE</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="bootstrap-4.0.0-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+
+    <link rel="styleshet" type="text/css"  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <!--Google font-->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,600,600i,700,700i" rel="stylesheet">
+        <!--aos css slider-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script>
+        var together = [];
+        function now(){
+            fname2 = fname.value;
+            fname.value = "";
+            lname = lname.value,
+            lname.value = "";
+            email = email.value;
+            email.value = "";
+            date = date.value;
+            date.value = "";
+            country = country.value
+            country.value = "";
+            code = code.value
+            code.value = "";
+            lang = lang.value
+            lang.value =""
+            phone = phone.value
+            phone.value = ""
+            op = op.value
+            op.value = ""
+            select.select.value
+            select.value = "";
+        
+            together.push(
+                {
+                    "firstname":fname2,
+                    "lastname":lname,
+                    "email":email,
+                    "date":date,
+                    "country":country,
+                    "code":code,
+                    "lang":lang,
+                    "phone":phone,
+                    "op":op,
+                    "select":select
+                }
+            )
+            console.log(together);
+        }
+    </script>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #333; height: 60px; ">
+        <a class="navbar-brand" href="#"><img src="emirate.png" width="100"  height="120" style="top: 2em;position:relative;z-index:1; margin-left: 23px;"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav mx-2 add ">
+                <li class="nav-item active ">
+                <a class="nav-link top" href="#">BOOK<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link top " href="#">MANAGE</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link top" href="#">EXPERIENCE</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link top" href="#">WHERE TO FLY</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link top" href="#">LOYALTY.</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link top" href="#">HELP</a>
+                </li>
+                <ul class="d-flex" style="margin-left:107px;">
+                    <li class="nav-item ">
+                        <a class="nav-link" href="#">NG<span><i class="fa-brands fa-search mx-2"></i></span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><i class="fa-brands fa-search mx-2 "></i></span>LOGIN<span></a>
+                    </li>
+                </ul>
+            </ul>
+        </div>
+    </nav>
+    <nav class="navbar navbar-expand-lg " style=" height: 30px;">
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="list-unstyled eee nav nav-tabs">
+                <li class="nav-item"><a class="nav-link" onmouseover="emirate()" id="emm">Emirate.</a></li>
+                <li class="nav-item"> <a class="nav-link" onmouseover="bus()" id="bus">Business Rewards</a></li>    
+            </ul>  
+        </div>
+        <form class="form-inline">
+            <button type="button" class="btn btn-danger">search flights</button>
+        </form> 
+    </nav>
+    <div id="enter" style="background-color: white; position: relative; height: 14px;"></div>
+    <script>
+        function emirate(){
+            a = enter.innerHTML = "Join Emirate Skyward";
+            emm.a;
+           
+        }
+        function bus(){
+            b = enter.innerHTML = "Register your company";
+            bus.b
+            b.style.margin-left;
+        }
+    </script>
+    <section class="section" style="background-image: url(./emiratebg.webp); background-position: relative; background-size: cover; height: 900px;">
+        <div class="container">
+            <div class="row justify-content-center my-5">
+                <div class="col-md-8 text-center mt-4">
+                    <p class="text-white  loy"><span>LOYALTY</span></p>
+                    <h3 class="text-white loyal">Join Emirate Skyward<h3>
+                    <p class="text-white open mb-4">Open up a world of rewards every time you travel. Enjoy reward flights, upgrades, exclusive benefits and more.</p>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="form-group">
+                <div class="row justify-content-center">
+                    <div class="col-md-8 mt-4">
+                        <div class="row justify-content-center">
+                            <div class="col-md-4">
+                                <select class="form-control" id="select">
+                                    <option value="Title">Title</option>
+                                    <option>Mr </option>
+                                    <option>Mrs </option>
+                                </select>
+                            </div>
+                            <div class="col-md-4">
+                                <input type="text" class="form-control shadow-md" value="" id="fname" placeholder=" FirstName" >
+                            </div>
+                            <div class="col-md-4">
+                                <input type="text" class="form-control shadow-md" id="lname" value="" placeholder=" LastName">
+                            </div>
+                        </div>
+                        <p><small style="color:white; font-size:15px">Your name must be entered in English as it appears on your passport.</small></p>
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-md-8">
+                        <div class="row">
+                            <div class="col-md-6">
+                            <input type="email" placeholder="Email" id="email" value="" class="form-control">  
+                            </div>
+                            <div class="col-md-6">
+                                <input type="password" placeholder="Password" value="" id="pass" class="form-control">    
+                            </div>
+                        </div>
+                        <div class="row my-4">
+                            <div class="col-md-6">
+                                <input type="date" placeholder="Date" id="date" value="" class="form-control">
+                                
+                            </div>
+                            <div class="col-md-6">
+                                <input type="text" class="form-control" id="country" value="" placeholder="Country/Territory of residence">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-md-8">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <select class="form-control" id="lang" value="">
+                                    <option>English</option>
+                                    <option>Yoruba</option>
+                                    <option>French</option>
+                                </select>
+                            </div>
+                            <div class="col-md-4">
+                                <select class ="form-control" id="code" value="">
+                                    <option>Country Code</option>
+                                    <option>234</option>
+                                    <option>990</option>
+                                    <option>220</option>
+                                </select>    
+                            </div>
+                            <div class="col-md-4">
+                                <input type="text" placeholder ="Mobile number" value="" id="phone" class="form-control">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-md-8">
+                        <div class="row my-4 ms-5 ">
+                            <div class="col-md-8 ">
+                            <input type="text" placeholder="Enter invite code (optional)" value="" id="op" class="form-control">
+                            </div>
+                        </div>
+                        <p>Already have an Emirates Skywards membership number?</p>
+                        <fieldset class="mb-5"><legend style="font-size:20px">By creating an account you are agreeing to the  <a> Emirates Skywards programme rules</a> and our  privacy policy </legend></fieldset>
+                        <button type="submit" class="btn tobi d-flex m-auto" onclick="now()">Create an account</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid" style="background-color:#282828;">
+            <div class="col-md-12">
+                <div class="row justify-content-justify">
+                    <div class="col-md-7 text-justify ml-4">
+                        <ul class="list-unstyled sky">
+                            <li class="mmma">
+                                <a>Emirates</a>
+                            </li>
+                            <li>
+                                <a>Emirates Skywards</a>
+                            </li>
+                            <li>
+                                <span>Skywards Registration</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <footer class="container-fluid" style="background-color: #333">
+            <div class="container">
+                <div class="row justify-content-justify">
+                    <div class="col-md-12">
+                        <div class="row footer mt-4 text-justify">
+                            <div class="col-md-3">
+                                <h3>About</h3>
+                                <p><a href="#">About us</a></p>
+                                <p><a href="#">Media Centre</a></p>
+                                <p><a href="#">Our planet</a></p>
+                                <p><a href="#">Our people</a></p>
+                                <p><a href="#">Our communities</a></p>
+                            </div>
+                            <div class="col-md-3">
+                                <h3>Help</h3>
+                                <p><a href="#">Travel Updates</a></p>
+                                <p><a href="#">Help and Contact</a></p>
+                                <p><a href="#">Special assistance</a></p>
+                                <p><a href="#">Frequently asked questions</a></p>
+                            </div>
+                            <div class="col-md-3">
+                            <h3>Book</h3>
+                                <p><a href="#">Travel Updates</a></p>
+                                <p><a href="#">Help and Contact</a></p>
+                                <p><a href="#">Special assistance</a></p>
+                                <p><a href="#">Frequently asked questions</a></p>
+                            </div>
+                            <div class="col-md-3">
+                                <h3>Manage</h3>
+                                <p><a href="#">Travel Updates</a></p>
+                                <p><a href="#">Help and Contact</a></p>
+                                <p><a href="#">Special assistance</a></p>
+                                <p><a href="#">Frequently asked questions</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container my-3 justify-content-justify">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="div mb-4">
+                                <span class="underline"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container justify-content-justify">
+                    <div class="row">
+                        <div class="col-md-12 mt-3">
+                            <div class="row footer22">
+                                <div class="col-md-3">
+                                    <h3>About</h3>
+                                    <p><a href="#">About us</a></p>
+                                    <p><a href="#">Media Centre</a></p>
+                                    <p><a href="#">Our planet</a></p>
+                                    <p><a href="#">Our people</a></p>
+                                    <p><a href="#">Our communities</a></p>
+                                </div>
+                                <div class="col-md-3">
+                                    <h3>Help</h3>
+                                    <p><a href="#">Travel Updates</a></p>
+                                    <p><a href="#">Help and Contact</a></p>
+                                    <p><a href="#">Special assistance</a></p>
+                                    <p><a href="#">Frequently asked questions</a></p>
+                                </div>
+                                <div class="col-md-3">
+                                    <h3>Book</h3>
+                                    <p><a href="#">Travel Updates</a></p>
+                                    <p><a href="#">Help and Contact</a></p>
+                                    <p><a href="#">Special assistance</a>
+                                    <p><a href="#">Frequently asked questions</a></p>
+                                </div>
+                                <div class="col-md-3">
+                                    <h3>Book</h3>
+                                    <p><a href="#">Travel Updates</a></p>
+                                    <p><a href="#">Help and Contact</a></p>
+                                    <p><a href="#">Special assistance</a></p>
+                                    <p><a href="#">Frequently asked questions</a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container justify-content-justify">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="row">
+                            <div class="col-md-4 sub">
+                                <h3 class="text-white ">Subscribe to our special offers</h3>
+                                <p class="text-white">Save with our latest fares and offers.</p>
+                                <p class="text-white">Unsubscribe or change your preferences</p>
+                            </div>
+                            <div class="col-md-4 app">
+                                <h3 class="text-uppercase">Emirates App</h3>
+                                <p>Book and manage your flights on the go.</p>
+                            </div>
+                            <div class="col-md-4 exp">
+                                <h3 class="text-uppercase">Connect with us</h3>
+                                <p>Share your Emirates experience.</p>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="form d-flex">
+                            <input type="text" class="form-control2 me-5" placeholder="Email address">
+                            <button class="btn btn-outline-light  btn-sm">Subscribe</button>
+                        </div>
+                        <p><a href="#" class="detail">For details on how we use your information, please see our <u>Privacy Policy</u></a></p>
+                    </div>
+                    <div class="col-md-4">
+                        <ul class="list-unstyled">
+                            <li<a href=""><img src="apple-en.svg"></a></li>
+                            <li<a href=""><img src="google-playstore.svg"></a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4" >
+                        <div class="social-media">
+                            <a><i class="fa-brands fa-facebook"></i></a>
+                            <a><i class="fa-brands fa-instagram"></i></a>
+                            <a><i class="fa-brands fa-twitter"></i></a> 
+                            <a><i class="fa-brands fa-youtube"></i></a> 
+                            <a><i class="fa-brands fa-linkedin"></i></a> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container justify-content-justify">
+                <div class="row ">
+                    <div class="col-md-4 text-justify">
+                            <img src="sky.svg" class="img-responsive"  alt="sky" width="250px" >
+                    </div>
+                    <div class="col-md-4 text-justify">
+                        <img src="sky.svg" class="img-responsive"  alt="sky" width="250px" >
+                    </div>
+                    <div class="col-md-4 text-justify">
+                        <img src="sky.svg" class="img-responsive"  alt="sky" width="250px" >
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="col-md-5 text-justify">
+                            <span class="underline"></span>
+                        </div>    
+                    </div>
+                </div>
+            </div>
+            <div class="container justify-content-justify">
+                <div class="row">
+                    <div class="col-md-5 text-justify">
+                        <ul class="list-unstyled access">
+                            <li><a href="#">Accessibility statement</a></li>
+                            <li><a href="">Contact us</a></li>
+                            <li><a href="#">Privacy policy</a></li>
+                            <li><a href="#">Cookie Policy</a></li>
+                            <li><a href="#">Cybersecurity</a></li>
+                            <li><a href="#">Modern Slavery Act transparency statement</a></li>
+                            <li><a href="#"> Sitemap</a></li><br>
+                            <li><a class="#">Modern Slavery Act transparency statement</a></li>
+                            <li><a class="#">Sitemap</a></li>
+                        </ul>
+                        <p style="color: #fff; font-size:11px; font-weight: 700;">© 2022 The Emirates Group. All Rights Reserved.</p>
+                    </div>
+                    <div>
+                        <a class="navbar-brand" href="#"><img src="emirate.png" width="100"  height="120" style="top: 2em;position:relative;z-index:1; margin-left: 300px; margin-top: -23px;"></a>
+                    </div>
+                </div> 
+            </div>
+        </footer>
+    </section>
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!--Vendor files-->
+    <script src="bootstrap-4.0.0-dist/js/bootstrap.js"></script>
+</body>
+
+</html>
