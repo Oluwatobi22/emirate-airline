@@ -8,63 +8,79 @@
     <title>EMIRATE WEBSITE</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="bootstrap-4.0.0-dist/css/bootstrap.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
-
     <link rel="styleshet" type="text/css"  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <!--Google font-->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,600,600i,700,700i" rel="stylesheet">
         <!--aos css slider-->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
     <script>
         var together = [];
-        function now(){
+        function show(){
+            let cc = document.getElementById('select');
+            let opt= cc.options[cc.selectedIndex].text;
             fname2 = fname.value;
             fname.value = "";
-            lname = lname.value,
+            llsname = lname.value,
             lname.value = "";
-            email = email.value;
+            mail = email.value;
             email.value = "";
-            date = date.value;
+            ddate = date.value;
             date.value = "";
-            country = country.value
-            country.value = "";
-            code = code.value
-            code.value = "";
-            lang = lang.value
-            lang.value =""
-            phone = phone.value
+            add = address.value
+            address.value = ""
+            let lan = document.getElementById('lang');
+            let lang2 = lan.options[lan.selectedIndex].text
+            console.log(lang2);
+            let r = document.getElementById('code');
+            let re= r.options[r.selectedIndex].text
+            console.log(re);
+            ph = phone.value
             phone.value = ""
-            op = op.value
-            op.value = ""
-            select.select.value
-            select.value = "";
-        
-            together.push(
-                {
-                    "firstname":fname2,
-                    "lastname":lname,
-                    "email":email,
-                    "date":date,
-                    "country":country,
-                    "code":code,
-                    "lang":lang,
-                    "phone":phone,
-                    "op":op,
-                    "select":select
-                }
-            )
-            console.log(together);
+            inn = invite.value
+            invite.value = ""
+            pwd = pass.value
+            pass.value = ""
+            let obj = {
+                "title":opt,
+                "firstname":fname2,
+                "lastname":llsname,
+                "email":mail,
+                "password":pwd,
+                "date":ddate,
+                "address":add,
+                "lang":lang2,
+                "country-code":re,
+                "phone":ph,
+                "invite":inn,
+            }
+            together.push(obj)
+            localStorage.setItem("register", JSON.stringify(together));
+        }
+        if (localStorage.register) {
+            together = JSON.parse(localStorage.register)
+        }
+        console.log(localStorage.register);
+        function emirate(){
+        let emirate =  document.getElementById('emm').innerHTML
+        let erecieve = document.getElementById('filler').innerHTML = emirate
+
+        }
+        function bus(){
+        let emirate =  document.getElementById('bus').innerHTML
+        let erecieve = document.getElementById('filler').innerHTML = emirate
+
         }
     </script>
 </head>
 <body>
     <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #333; height: 60px; ">
-        <a class="navbar-brand" href="#"><img src="emirate.png" width="100"  height="120" style="top: 2em;position:relative;z-index:1; margin-left: 23px;"></a>
+        <a class="navbar-brand" href="#"><img src="emirate.png" width="100"  height="120" style="top: 2em;position:relative;z-index:1; position: relative; left: 105px;"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
-          <ul class="navbar-nav mx-2 add ">
+            <ul class="navbar-nav ml-5 add">
                 <li class="nav-item active ">
                 <a class="nav-link top" href="#">BOOK<span class="sr-only">(current)</span></a>
                 </li>
@@ -83,48 +99,49 @@
                 <li class="nav-item">
                     <a class="nav-link top" href="#">HELP</a>
                 </li>
-                <ul class="d-flex" style="margin-left:107px;">
-                    <li class="nav-item ">
+                <ul class="d-flex" class="nice" style="margin-left:90px;">
+                    <li class="nav-item  ">
                         <a class="nav-link" href="#">NG<span><i class="fa-brands fa-search mx-2"></i></span></a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#"><i class="fa-brands fa-search mx-2 "></i></span>LOGIN<span></a>
                     </li>
                 </ul>
+                <button type="button" class="btn btn-danger" style="position: relative; bottom:2px; left: 83px;">search flights</button>
             </ul>
         </div>
     </nav>
-    <nav class="navbar navbar-expand-lg " style=" height: 30px;">
+    <nav class="navbar navbar-expand-lg " style=" height: 20px; ">
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
             <ul class="list-unstyled eee nav nav-tabs">
-                <li class="nav-item"><a class="nav-link" onmouseover="emirate()" id="emm">Emirate.</a></li>
-                <li class="nav-item"> <a class="nav-link" onmouseover="bus()" id="bus">Business Rewards</a></li>    
+                <li class="nav-item"><a class="nav-link" onmouseover="emirate()" >Emirate.</a></li>
+                <li class="nav-item"> <a class="nav-link" onmouseover="bus()">Business Rewards</a></li>    
             </ul>  
         </div>
-        <form class="form-inline">
-            <button type="button" class="btn btn-danger">search flights</button>
-        </form> 
     </nav>
-    <div id="enter" style="background-color: white; position: relative; height: 14px;"></div>
-    <script>
-        function emirate(){
-            a = enter.innerHTML = "Join Emirate Skyward";
-            emm.a;
-           
-        }
-        function bus(){
-            b = enter.innerHTML = "Register your company";
-            bus.b
-            b.style.margin-left;
-        }
-    </script>
+    <div class="container">
+        <div class="row ">
+            <div class="col-md-4 text-center">
+                <div id="filler" style="background-color: white; position: relative; top: 23px; margin-left: 43px; height: 14px;">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="col-md-4 d-none"  id="emm">
+            <p>join Emirate skyward</p>
+        </div>
+        <div class="col-md-4 d-none" id="bus">
+            <p><span>Register your company</span></p>
+        </div>
+    </div> 
     <section class="section" style="background-image: url(./emiratebg.webp); background-position: relative; background-size: cover; height: 900px;">
         <div class="container">
             <div class="row justify-content-center my-5">
                 <div class="col-md-8 text-center mt-4">
                     <p class="text-white  loy"><span>LOYALTY</span></p>
                     <h3 class="text-white loyal">Join Emirate Skyward<h3>
-                    <p class="text-white open mb-4">Open up a world of rewards every time you travel. Enjoy reward flights, upgrades, exclusive benefits and more.</p>
+                    <p class="text-white open mb-4">Open up a world of rewards every time you travel.Enjoy reward flights, upgrades, exclusive benefits and more.</p>
                 </div>
             </div>
         </div>
@@ -135,9 +152,11 @@
                         <div class="row justify-content-center">
                             <div class="col-md-4">
                                 <select class="form-control" id="select">
-                                    <option value="Title">Title</option>
-                                    <option>Mr </option>
-                                    <option>Mrs </option>
+                                    <option value="1">Miss</option>
+                                    <option value="2">Mr</option>
+                                    <option value="3">Mrs</option>
+                                    <option value="3">Dr</option>
+                                    <option value="3">pastor</option>
                                 </select>
                             </div>
                             <div class="col-md-4">
@@ -162,11 +181,10 @@
                         </div>
                         <div class="row my-4">
                             <div class="col-md-6">
-                                <input type="date" placeholder="Date" id="date" value="" class="form-control">
-                                
+                                <input type="date" placeholder="Date" id="date" value="" class="form-control"> 
                             </div>
                             <div class="col-md-6">
-                                <input type="text" class="form-control" id="country" value="" placeholder="Country/Territory of residence">
+                                <input type="text" class="form-control" id="address" value="" placeholder="Country/Territory of residence">
                             </div>
                         </div>
                     </div>
@@ -176,18 +194,18 @@
                         <div class="row">
                             <div class="col-md-4">
                                 <select class="form-control" id="lang" value="">
-                                    <option>English</option>
-                                    <option>Yoruba</option>
-                                    <option>French</option>
+                                    <option  value="eng">English</option>
+                                    <option value="yor">Yoruba</option>
+                                    <option value="frn">French</option>
                                 </select>
                             </div>
                             <div class="col-md-4">
                                 <select class ="form-control" id="code" value="">
-                                    <option>Country Code</option>
-                                    <option>234</option>
-                                    <option>990</option>
-                                    <option>220</option>
-                                </select>    
+                                    <option value="1">Country Code</option>
+                                    <option value="2">234</option>
+                                    <option value="3">990</option>
+                                    <option value="4">220</option>
+                                </select>   
                             </div>
                             <div class="col-md-4">
                                 <input type="text" placeholder ="Mobile number" value="" id="phone" class="form-control">
@@ -199,12 +217,12 @@
                     <div class="col-md-8">
                         <div class="row my-4 ms-5 ">
                             <div class="col-md-8 ">
-                            <input type="text" placeholder="Enter invite code (optional)" value="" id="op" class="form-control">
+                                <input type="text" placeholder="Enter invite code (optional)" value="" id="invite" class="form-control">
                             </div>
                         </div>
                         <p>Already have an Emirates Skywards membership number?</p>
-                        <fieldset class="mb-5"><legend style="font-size:20px">By creating an account you are agreeing to the  <a> Emirates Skywards programme rules</a> and our  privacy policy </legend></fieldset>
-                        <button type="submit" class="btn tobi d-flex m-auto" onclick="now()">Create an account</button>
+                        <fieldset class="mb-5"><legend style="font-size:20px">By creating an account you are agreeing to the  <u> Emirates Skywards programme rules</u> and our  privacy policy </legend></fieldset>
+                        <button type="submit" class="btn tobi d-flex m-auto" onclick="show()">Create an account</button>
                     </div>
                 </div>
             </div>
@@ -228,7 +246,6 @@
                 </div>
             </div>
         </div>
-    
         <footer class="container-fluid" style="background-color: #333">
             <div class="container">
                 <div class="row justify-content-justify">
@@ -270,7 +287,7 @@
                     <div class="row">
                         <div class="col-md-12">
                             <div class="div mb-4">
-                                <span class="underline"></span>
+                               <hr class="new">
                             </div>
                         </div>
                     </div>
@@ -329,7 +346,6 @@
                             <div class="col-md-4 exp">
                                 <h3 class="text-uppercase">Connect with us</h3>
                                 <p>Share your Emirates experience.</p>
-                                
                             </div>
                         </div>
                     </div>
@@ -371,15 +387,15 @@
                 </div>
                 <div class="row">
                     <div class="col-md-12">
-                        <div class="col-md-5 text-justify">
-                            <span class="underline"></span>
-                        </div>    
+                        <div class="div mb-4">
+                           <hr class="new">
+                        </div>
                     </div>
                 </div>
             </div>
             <div class="container justify-content-justify">
                 <div class="row">
-                    <div class="col-md-5 text-justify">
+                    <div class="col-md-9 text-justify">
                         <ul class="list-unstyled access">
                             <li><a href="#">Accessibility statement</a></li>
                             <li><a href="">Contact us</a></li>
@@ -393,8 +409,8 @@
                         </ul>
                         <p style="color: #fff; font-size:11px; font-weight: 700;">© 2022 The Emirates Group. All Rights Reserved.</p>
                     </div>
-                    <div>
-                        <a class="navbar-brand" href="#"><img src="emirate.png" width="100"  height="120" style="top: 2em;position:relative;z-index:1; margin-left: 300px; margin-top: -23px;"></a>
+                    <div class="col-md-3">
+                        <a class="navbar-brand" href="#"><img src="emirate.png" width="100" class="ml-4"  height="120" style="top: 2em;position:relative; margin-top: -23px;"></a>
                     </div>
                 </div> 
             </div>
